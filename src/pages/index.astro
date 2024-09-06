@@ -1,5 +1,5 @@
 ---
-
+const businessName = 'Core Health Concepts'
 ---
 
 <html lang="en">
@@ -8,9 +8,37 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{businessName}</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="text-center">
+		<header class="flex justify-between">
+			<h1 class="text-2xl text-left font-bold">{businessName}</h1>
+			<nav class="flex justify-evenly gap-3">
+				<div>About Us</div>
+				<div>Contact</div>
+				<div>Blog</div>
+			</nav>
+		</header>
+		<main class="text-xl">
+			<div>
+				<h1 class="font-bold text-3xl">{businessName}</h1>
+				Core Health Concepts is a research and development service focused on healthcare testing reviews.
+			</div>
+			<div class="">
+				<h1 class="font-bold text-3xl">The Impact We Make</h1>
+				As healthcare evolves to emphasize root cause analysis, more tests are available through functional medicine—often at high costs and not always covered by insurance.
+			</div>
+			<div class="">
+				<h1 class="text-3xl font-bold">Our Mission</h1>
+				Our mission is to identify the most comprehensive and effective testing options to detect health issues early, preventing them from becoming severe, all while offering the most affordable pricing. 
+			</div>
+		</main>
+		<footer class="flex gap-3 justify-between mt-4">
+			<button>
+				Sign Up For our Newsletter
+			</button>
+			<h1>{businessName}</h1>
+			<h1>Follow us Social Media</h1>
+		</footer>
 	</body>
 </html>
