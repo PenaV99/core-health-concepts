@@ -1,5 +1,5 @@
 ---
-const businessName = 'Core Health Concepts'
+const businessName = 'Core Health'
 ---
 
 <html lang="en">
@@ -9,21 +9,53 @@ const businessName = 'Core Health Concepts'
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{businessName}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 	</head>
-	<body class="text-center">
-		<header class="flex justify-between">
-			<h1 class="text-2xl text-left font-bold">{businessName}</h1>
-			<nav class="flex justify-evenly gap-3">
+	<body class="text-center font-sans font-normal">
+		<main class="	text-2xl text-[#3b0086]
+		 				h-screen max-w-screen
+						bg-[url('/chc-hero-mobile.png')] bg-cover bg-bottom border-solid border-2
+						sm:sm:bg-right-top sm:bg-[url('/medical-bg.png')]
+		">
+		<header class="
+				flex flex-col text-2xl p-2 h-20 mb-7
+
+				sm:flex-row sm:justify-between
+				">
+			<img src="/chc-logo-nobg.svg" alt="" 
+			class=" object-fill h-full w-5/6
+
+					sm:w-80
+			"
+			>
+			<span class=""></span>
+			<span class=""></span>
+			<span class=""></span>
+			<nav class="flex justify-between gap-3">
 				<div>About Us</div>
 				<div>Contact</div>
 				<div>Blog</div>
 			</nav>
 		</header>
-		<main class="text-xl">
-			<div>
-				<h1 class="font-bold text-3xl">{businessName}</h1>
-				Core Health Concepts is a research and development service focused on healthcare testing reviews.
+	
+		<section id="hero-section" class=" flex flex-col
+				">
+				<div id="brnad-intro" class="
+				text-left w-full mt-20
+				
+				sm:w-1/2 sm:mt-0 sm:p-3 sm:text-[]
+				">
+				<h1 class="font-bold text-5xl">{businessName}</h1>
+				<p class="font-serif">
+					Core Health Concepts is a research and development service focused on healthcare testing reviews.
+				</p>
 			</div>
+			<button>Sign up for our Newsletter</button>
+		</section>
+		</main>
 			<div class="">
 				<h1 class="font-bold text-3xl">The Impact We Make</h1>
 				As healthcare evolves to emphasize root cause analysis, more tests are available through functional medicine—often at high costs and not always covered by insurance.
@@ -32,7 +64,6 @@ const businessName = 'Core Health Concepts'
 				<h1 class="text-3xl font-bold">Our Mission</h1>
 				Our mission is to identify the most comprehensive and effective testing options to detect health issues early, preventing them from becoming severe, all while offering the most affordable pricing. 
 			</div>
-		</main>
 		<footer class="flex gap-3 justify-between mt-4">
 			<button>
 				Sign Up For our Newsletter
