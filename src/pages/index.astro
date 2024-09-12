@@ -1,75 +1,98 @@
 ---
-const businessName = 'Core Health'
+const businessName = "Core Health";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{businessName}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{businessName}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/5cb9dec18e.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body class="text-center font-sans font-normal">
+        <section
+            id="hero-wrapper"
+            class="text-2xl text-[#03045e]
+		 				h-screen max-w-screen max-h-screen
+						bg-[url('/blood-test.png')] bg-cover bg-bottom border-solid border-2
+						sm:sm:bg-right-top sm:bg-[url('/blood-test.png')]"
+        >
+            <header
+                class="flex
+            flex-col
+            text-2xl
+            p-2
+            h-20
+            mb-7
+            sm:flex-row
+            sm:justify-between"
+            >
+                <img
+                    src="/chc-logo-nobg.svg"
+                    alt=""
+                    class="object-fill h-full w-5/6
+					sm:w-80"
+                />
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+                <nav class="flex justify-between gap-3">
+                    <div>About Us</div>
+                    <div>Contact</div>
+                    <div>Blog</div>
+                </nav>
+            </header>
 
-	</head>
-	<body class="text-center font-sans font-normal">
-		<section class="text-2xl text-[#3b0086]
-		 				h-screen max-w-screen
-						bg-[url('/medical-bg.png')] bg-cover bg-bottom border-solid border-2
-
-						sm:sm:bg-right-top sm:bg-[url('/medical-bg.png')]
-		">
-		<header class="
-				flex flex-col text-2xl p-2 h-20 mb-7
-
-				sm:flex-row sm:justify-between
-				">
-			<img src="/chc-logo-nobg.svg" alt="" 
-			class=" object-fill h-full w-5/6
-
-					sm:w-80
-			"
-			>
-			<span class=""></span>
-			<span class=""></span>
-			<span class=""></span>
-			<nav class="flex justify-between gap-3">
-				<div>About Us</div>
-				<div>Contact</div>
-				<div>Blog</div>
-			</nav>
-		</header>
-	
-		<main id="hero-section" class="flex flex-col justify-between h-4/6">
-			<div id="brand-intro" class="
-				text-center w-full mt-4
-				
-				sm:w-1/2 sm:mt-0 sm:p-3 sm:text-left
-				">
-				<h1 class="font-bold text-5xl">{businessName}</h1>
-				<p class="font-serif">
-					Core Health Concepts is a research and development service focused on healthcare testing reviews.
-				</p>
-			</div>
-			<div>Sign up for our Newsletter</div>
-		</main>
-	</section>
-			<div class="">
-				<h1 class="font-bold text-3xl">The Impact We Make</h1>
-				As healthcare evolves to emphasize root cause analysis, more tests are available through functional medicine—often at high costs and not always covered by insurance.
-			</div>
-			<div class="">
-				<h1 class="text-3xl font-bold">Our Mission</h1>
-				Our mission is to identify the most comprehensive and effective testing options to detect health issues early, preventing them from becoming severe, all while offering the most affordable pricing. 
-			</div>
-		<footer class="flex gap-3 justify-between mt-4">
-			<button>
-				Sign Up For our Newsletter
-			</button>
-			<h1>{businessName}</h1>
-			<h1>Follow us Social Media</h1>
-		</footer>
-	</body>
+            <main id="brand-intro" class="flex flex-col justify-between h-5/6">
+                <div
+                    id="brand-intro__text"
+                    class="text-center w-full mt-4 font-semibold
+                            sm:w-1/2 sm:mt-0 sm:p-3 sm:text-left"
+                >
+                    <h1 class="font-bold text-5xl">Reviewing Healthcare</h1>
+                    <p class="font-serif">
+                        Core Health Concepts is a research and development
+                        service focused on healthcare testing reviews.
+                    </p>
+                </div>
+                <div
+                    class="border-1 border-solid border-[#03045e] w-1/2 text-center mx-auto p-2"
+                >
+                    <h1
+                        class="text-3xl font-medium bg-zinc-50
+                                sm:text-5xl"
+                    >
+                        Learn More <i class="fa-solid fa-chevron-down"></i>
+                    </h1>
+                </div>
+            </main>
+        </section>
+        <div class="">
+            <h1 class="font-bold text-3xl">The Impact We Make</h1>
+            As healthcare evolves to emphasize root cause analysis, more tests are
+            available through functional medicine—often at high costs and not always
+            covered by insurance.
+        </div>
+        <div class="">
+            <h1 class="text-3xl font-bold">Our Mission</h1>
+            Our mission is to identify the most comprehensive and effective testing
+            options to detect health issues early, preventing them from becoming
+            severe, all while offering the most affordable pricing.
+        </div>
+        <footer class="flex gap-3 justify-between mt-4">
+            <button> Sign Up For our Newsletter </button>
+            <h1>{businessName}</h1>
+            <h1>Follow us Social Media</h1>
+        </footer>
+    </body>
 </html>
